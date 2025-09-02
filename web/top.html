@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeamWater - YouTube Live Stream Overlay</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./assets/styles/top.css">
+    <link rel="stylesheet" href="./assets/odometer.css">
+</head>
+
+<body>
+    <!-- Top bar with logo and main stats -->
+    <div class="top-bar">
+        <div class="logo-section">
+            <div class="logo">💧</div>
+            <div class="team-name">#TEAMWATER</div>
+        </div>
+
+
+        <div class="countdown-section">
+            <div class="countdown pulse">58:12:37:24</div>
+            <div class="countdown-label">Time left until September 1st, 2025 (EST)</div>
+        </div>
+
+        <div class="rate-goal">
+            <div class="rate">
+                <p id="rateMin" class="odomerer">$0</p>/MIN
+            </div>
+            <div class="rate">
+                <p id="rateHour" class="odomerer">$0</p>/HOUR
+            </div>
+            <div class="goal">
+                <div id="eta">$0</div>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/odometer.js"></script>
+    <script src="./assets/scripts/top.js"></script>
+</body>
+
+</html>

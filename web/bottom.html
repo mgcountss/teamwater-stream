@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeamWater - YouTube Live Stream Overlay</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./assets/styles/bottom.css">
+    <link rel="stylesheet" href="./assets/odometer.css">
+</head>
+
+<body>
+    <div class="bottom-section">
+        <div class="first">
+            <div class="creator-stats-bar">
+                <div class="creator-stats-content">
+                    <div class="top-creators">
+                        <div class="creator-item">
+                            <img src="./assets/default.svg" class="creator-image">
+                            <div>
+                                <div class="creator-name">Creator 1</div>
+                                <div class="creator-subs odometer">12500</div>
+                            </div>
+                        </div>
+                        <div class="creator-item">
+                            <img src="./assets/default.svg" class="creator-image">
+                            <div>
+                                <div class="creator-name">Creator 2</div>
+                                <div class="creator-subs odometer">9800</div>
+                            </div>
+                        </div>
+                        <div class="creator-item">
+                            <img src="./assets/default.svg" class="creator-image">
+                            <div>
+                                <div class="creator-name">Creator 3</div>
+                                <div class="creator-subs odometer">7650</div>
+                            </div>
+                        </div>
+                        <div class="creator-item">
+                            <img src="./assets/default.svg" class="creator-image">
+                            <div>
+                                <div class="creator-name">Creator 4</div>
+                                <div class="creator-subs odometer">5420</div>
+                            </div>
+                        </div>
+                        <div class="creator-item">
+                            <img src="./assets/default.svg" class="creator-image">
+                            <div>
+                                <div class="creator-name">Creator 5</div>
+                                <div class="creator-subs odometer">3200</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Communities Donation Leaderboard -->
+            <div class="donation-leaderboard mt2">
+                <h3 class="donation-title">💰 Top Teams</h3>
+                <div class="donation-grid" id="donationGrid">
+                    <div class="donation-item">
+                        <div class="donation-rank">1</div>
+                        <div style="display: flex;">
+                            <img src="../web/assets/water.png" class="donation-thumbnail">
+                            <div class="donation-name"></div>
+                        </div>
+                        <div class="donation-amount">...</div>
+                    </div>
+                    <div class="donation-item">
+                        <div class="donation-rank">2</div>
+                        <div style="display: flex;">
+                            <img src="../web/assets/water.png" class="donation-thumbnail">
+                            <div class="donation-name"></div>
+                        </div>
+                        <div class="donation-amount">...</div>
+                    </div>
+                    <div class="donation-item">
+                        <div class="donation-rank">3</div>
+                        <div style="display: flex;">
+                            <img src="../web/assets/water.png" class="donation-thumbnail">
+                            <div class="donation-name"></div>
+                        </div>
+                        <div class="donation-amount">...</div>
+                    </div>
+                    <div class="donation-item">
+                        <div class="donation-rank">4</div>
+                        <div style="display: flex;">
+                            <img src="../web/assets/water.png" class="donation-thumbnail">
+                            <div class="donation-name"></div>
+                        </div>
+                        <div class="donation-amount">...</div>
+                    </div>
+                    <div class="donation-item">
+                        <div class="donation-rank">5</div>
+                        <div style="display: flex;">
+                            <img src="../web/assets/water.png" class="donation-thumbnail">
+                            <div class="donation-name"></div>
+                        </div>
+                        <div class="donation-amount">...</div>
+                    </div>
+                    <div class="donation-item">
+                        <div class="donation-rank">6</div>
+                        <div style="display: flex;">
+                            <img src="../web/assets/water.png" class="donation-thumbnail">
+                            <div class="donation-name"></div>
+                        </div>
+                        <div class="donation-amount">...</div>
+                    </div>
+                    <div class="donation-item">
+                        <div class="donation-rank">7</div>
+                        <div style="display: flex;">
+                            <img src="../web/assets/water.png" class="donation-thumbnail">
+                            <div class="donation-name"></div>
+                        </div>
+                        <div class="donation-amount">...</div>
+                    </div>
+                    <div class="donation-item">
+                        <div class="donation-rank">8</div>
+                        <div style="display: flex;">
+                            <img src="../web/assets/water.png" class="donation-thumbnail">
+                            <div class="donation-name"></div>
+                        </div>
+                        <div class="donation-amount">...</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="weekly-leaderboard mt2"></div>
+        </div>
+
+        <div class="new-videos-section" id="newVideoList">
+            <h3 class="section-title">Top Videos</h3>
+            <div class="new-video-list" id="topVideos">
+                <div class="new-video-item">
+                    <img src="https://i.ytimg.com/vi/VIDEO_ID_1/mqdefault.jpg" alt="Video Thumbnail"
+                        class="video-thumbnail">
+                    <div class="video-details">
+                        <div class="video-item-title">Amazing Gaming Highlights</div>
+                        <div class="video-item-channel">Gaming Channel</div>
+                    </div>
+                </div>
+                <div class="new-video-item">
+                    <img src="https://i.ytimg.com/vi/VIDEO_ID_2/mqdefault.jpg" alt="Video Thumbnail"
+                        class="video-thumbnail">
+                    <div class="video-details">
+                        <div class="video-item-title">Top Moments Compilation</div>
+                        <div class="video-item-channel">Best Moments</div>
+                    </div>
+                </div>
+                <div class="new-video-item">
+                    <img src="https://i.ytimg.com/vi/VIDEO_ID_3/mqdefault.jpg" alt="Video Thumbnail"
+                        class="video-thumbnail">
+                    <div class="video-details">
+                        <div class="video-item-title">Epic Fails & Wins</div>
+                        <div class="video-item-channel">Epic Content</div>
+                    </div>
+                </div>
+                <div class="new-video-item">
+                    <img src="https://i.ytimg.com/vi/VIDEO_ID_4/mqdefault.jpg" alt="Video Thumbnail"
+                        class="video-thumbnail">
+                    <div class="video-details">
+                        <div class="video-item-title">Community Highlights</div>
+                        <div class="video-item-channel">Community Hub</div>
+                    </div>
+                </div>
+                <div class="new-video-item">
+                    <img src="https://i.ytimg.com/vi/VIDEO_ID_5/mqdefault.jpg" alt="Video Thumbnail"
+                        class="video-thumbnail">
+                    <div class="video-details">
+                        <div class="video-item-title">Stream Best Moments</div>
+                        <div class="video-item-channel">Stream Clips</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="new-videos-section" id="topVideoList">
+            <h3 class="section-title">New Videos</h3>
+            <div class="new-video-list" id="newVideos">
+                <div class="new-video-item">
+                    <img src="https://i.ytimg.com/vi/VIDEO_ID_1/mqdefault.jpg" alt="Video Thumbnail"
+                        class="video-thumbnail">
+                    <div class="video-details">
+                        <div class="video-item-title">Latest Upload Today</div>
+                        <div class="video-item-channel">Fresh Content</div>
+                    </div>
+                </div>
+                <div class="new-video-item">
+                    <img src="https://i.ytimg.com/vi/VIDEO_ID_2/mqdefault.jpg" alt="Video Thumbnail"
+                        class="video-thumbnail">
+                    <div class="video-details">
+                        <div class="video-item-title">Breaking News Video</div>
+                        <div class="video-item-channel">News Channel</div>
+                    </div>
+                </div>
+                <div class="new-video-item">
+                    <img src="https://i.ytimg.com/vi/VIDEO_ID_3/mqdefault.jpg" alt="Video Thumbnail"
+                        class="video-thumbnail">
+                    <div class="video-details">
+                        <div class="video-item-title">Just Released Content</div>
+                        <div class="video-item-channel">New Creator</div>
+                    </div>
+                </div>
+                <div class="new-video-item">
+                    <img src="https://i.ytimg.com/vi/VIDEO_ID_4/mqdefault.jpg" alt="Video Thumbnail"
+                        class="video-thumbnail">
+                    <div class="video-details">
+                        <div class="video-item-title">Hot Topic Discussion</div>
+                        <div class="video-item-channel">Talk Show</div>
+                    </div>
+                </div>
+                <div class="new-video-item">
+                    <img src="https://i.ytimg.com/vi/VIDEO_ID_5/mqdefault.jpg" alt="Video Thumbnail"
+                        class="video-thumbnail">
+                    <div class="video-details">
+                        <div class="video-item-title">Trending Now Video</div>
+                        <div class="video-item-channel">Viral Videos</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/odometer.js"></script>
+    <script src="./assets/scripts/bottom.js"></script>
+</body>
+
+</html>

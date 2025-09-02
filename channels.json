@@ -1,0 +1,111 @@
+{
+    "UCwVg9btOceLQuNCdoQk9CXg": {
+        "brandingSettings": {
+            "image": "http://www.banner.tf/UCwVg9btOceLQuNCdoQk9CXg"
+        },
+        "id": "UCwVg9btOceLQuNCdoQk9CXg",
+        "snippet": {
+            "description": "",
+            "thumbnails": {
+                "default": {
+                    "url": "https://yt3.ggpht.com/Y_5UEmFz4ClK77lAjsApC6Hv1h0t4WaeJWpZCPfK1t_ghrnaVeDtiqQWKOJyu4aofx7o25jmaaA=s200-c-k-c0x00ffffff-no-rj"
+                }
+            },
+            "title": "Ben Azelart"
+        },
+        "statistics": {
+            "subscriberCount": 46172002,
+            "subscriberCountAPI": 46100000,
+            "videoCount": 391,
+            "viewCount": 11056686127,
+            "viewCountAPI": 11056243406
+        }
+    },
+    "UCbp9MyKCTEww4CxEzc_Tp0Q": {
+        "brandingSettings": {
+            "image": "http://www.banner.tf/UCbp9MyKCTEww4CxEzc_Tp0Q"
+        },
+        "id": "UCbp9MyKCTEww4CxEzc_Tp0Q",
+        "snippet": {
+            "description": "",
+            "thumbnails": {
+                "default": {
+                    "url": "https://yt3.ggpht.com/ytc/AIdro_licRUYkb1mqyEXaQPq67wtqgk7qinfWOEvc6gjnsSofu4=s200-c-k-c0x00ffffff-no-rj"
+                }
+            },
+            "title": "Stokes Twins"
+        },
+        "statistics": {
+            "subscriberCount": 131097259,
+            "subscriberCountAPI": 131000000,
+            "videoCount": 389,
+            "viewCount": 25345496388,
+            "viewCountAPI": 25344490647
+        }
+    },
+    "UCX6OQ3DkcsbYNE6H8uQQuVA": {
+        "brandingSettings": {
+            "image": "https://www.banner.yt/UCX6OQ3DkcsbYNE6H8uQQuVA"
+        },
+        "id": "UCX6OQ3DkcsbYNE6H8uQQuVA",
+        "snippet": {
+            "thumbnails": {
+                "default": {
+                    "url": "https://www.banner.yt/UCX6OQ3DkcsbYNE6H8uQQuVA/avatar"
+                }
+            },
+            "title": "MrBeast"
+        },
+        "statistics": {
+            "subscriberCount": 429590292,
+            "subscriberCountAPI": 429000000,
+            "videoCount": 896,
+            "viewCount": 93810339897,
+            "viewCountAPI": 93810339897
+        }
+    },
+    "UCY1kMZp36IQSyNx_9h4mpCg": {
+        "brandingSettings": {
+            "image": "http://www.banner.tf/UCY1kMZp36IQSyNx_9h4mpCg"
+        },
+        "id": "UCY1kMZp36IQSyNx_9h4mpCg",
+        "snippet": {
+            "description": "",
+            "thumbnails": {
+                "default": {
+                    "url": "https://yt3.ggpht.com/ytc/AIdro_ksXY2REjZ6gYKSgnWT5jC_zT9mX900vyFtVinR8KbHww=s200-c-k-c0x00ffffff-no-rj"
+                }
+            },
+            "title": "Mark Rober"
+        },
+        "statistics": {
+            "subscriberCount": 70782904,
+            "subscriberCountAPI": 70700000,
+            "videoCount": 226,
+            "viewCount": 13985551441,
+            "viewCountAPI": 13985190315
+        }
+    },
+    "UCXGITFpSIGWPTr8ekn9qjMw": {
+        "brandingSettings": {
+            "image": "http://www.banner.tf/UCXGITFpSIGWPTr8ekn9qjMw"
+        },
+        "id": "UCXGITFpSIGWPTr8ekn9qjMw",
+        "snippet": {
+            "description": "",
+            "thumbnails": {
+                "default": {
+                    "url": "https://yt3.ggpht.com/QO0KsIb3UjlnBrqnCCC1dn3KwKVLMZQgCJBKFu2v0pFiNDdLQTUh-iEavOXkQhlOaLTBrVvY=s200-c-k-c0x00ffffff-no-rj"
+                }
+            },
+            "title": "#TeamWater"
+        },
+        "statistics": {
+            "subscriberCount": 24530,
+            "subscriberCountAPI": 24500,
+            "videoCount": 12,
+            "viewCount": 529812,
+            "viewCountAPI": 529621
+        }
+    }
+}

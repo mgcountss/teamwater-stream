@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TeamWater - YouTube Live Stream Overlay</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./assets/styles/main.css">
+  <link rel="stylesheet" href="./assets/odometer.css">
+</head>
+
+<body>
+
+  <div class="main">
+    <!-- Left panel - Leaderboard & Latest Videos -->
+    <div class="left-panel">
+      <div class="panel-section">
+        <div class="panel-title">🏆 Top Donors</div>
+        <div id="topDonations">
+          <div class="leaderboard-item">
+            <div class="parent-rank"><span class="rank" style="color: #FFC107;">1.</span> ...</div>
+            <div style="color: #FFC107; font-weight: 600;">...</div>
+          </div>
+          <div class="leaderboard-item">
+            <div class="parent-rank"><span class="rank" style="color: #9E9E9E;">2.</span> ...</div>
+            <div style="color: #33ff00; font-weight: 600;">...</div>
+          </div>
+          <div class="leaderboard-item">
+            <div class="parent-rank"><span class="rank" style="color: #F57C00;">3.</span> ...</div>
+            <div style="color: #008cff; font-weight: 600;">...</div>
+          </div>
+          <div class="leaderboard-item">
+            <div class="parent-rank"><span class="rank" style="color: #64B5F6;">4.</span> ...</div>
+            <div style="color: #FFF; font-weight: 600;">...</div>
+          </div>
+          <div class="leaderboard-item">
+            <div class="parent-rank"><span class="rank" style="color: #64B5F6;">5.</span> ...</div>
+            <div style="color: #FFF; font-weight: 600;">...</div>
+          </div>
+          <div class="leaderboard-item">
+            <div class="parent-rank"><span class="rank" style="color: #64B5F6;">6.</span> ...</div>
+            <div style="color: #FFF; font-weight: 600;">...</div>
+          </div>
+          <div class="leaderboard-item">
+            <div class="parent-rank"><span class="rank" style="color: #64B5F6;">7.</span> ...</div>
+            <div style="color: #FFF; font-weight: 600;">...</div>
+          </div>
+          <div class="leaderboard-item">
+            <div class="parent-rank"><span class="rank" style="color: #64B5F6;">8.</span> ...</div>
+            <div style="color: #FFF; font-weight: 600;">...</div>
+          </div>
+          <div class="leaderboard-item">
+            <div class="parent-rank"><span class="rank" style="color: #64B5F6;">9.</span> ...</div>
+            <div style="color: #FFF; font-weight: 600;">...</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Massive main counter -->
+    <div class="main-counter">
+      <div id="main" class="main-number odometer">0</div>
+      <div class="main-label">Dollars Raised</div>
+
+      <!-- Progress bar -->
+      <div class="main-progress">
+        <div class="progress-bar">
+          <div class="progress-fill" style="width: 0%;"></div>
+        </div>
+        <div class="progress-labels">
+          <span>$0</span>
+          <span>$40,000,000</span>
+        </div>
+            <div class="goal">
+                <div id="goal" class="odometer">$0</div>
+                <div>/40,000,000</div>
+            </div>
+      </div>
+      <div id="container"></div>
+    </div>
+
+    <!-- Right panel - Recent donations & Top Videos -->
+    <div class="right-panel">
+      <div class="panel-section">
+        <div class="panel-title">🔥 Recent Donations</div>
+        <div id="recentDonations">
+          <div class="donation-item">
+            <div class="donor-name">...</div>
+            <div class="donation-amount">...</div>
+          </div>
+          <div class="donation-item">
+            <div class="donor-name">...</div>
+            <div class="donation-amount">...</div>
+          </div>
+          <div class="donation-item">
+            <div class="donor-name">...</div>
+            <div class="donation-amount">...</div>
+          </div>
+          <div class="donation-item">
+            <div class="donor-name">...</div>
+            <div class="donation-amount">...</div>
+          </div>
+          <div class="donation-item">
+            <div class="donor-name">...</div>
+            <div class="donation-amount">...</div>
+          </div>
+          <div class="donation-item">
+            <div class="donor-name">...</div>
+            <div class="donation-amount">...</div>
+          </div>
+          <div class="donation-item">
+            <div class="donor-name">...</div>
+            <div class="donation-amount">...</div>
+          </div>
+          <div class="donation-item">
+            <div class="donor-name">...</div>
+            <div class="donation-amount">...</div>
+          </div>
+          <div class="donation-item">
+            <div class="donor-name">...</div>
+            <div class="donation-amount">...</div>
+          </div>
+          <div class="donation-item">
+            <div class="donor-name">...</div>
+            <div class="donation-amount">...</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="test"></div>
+
+  <script src="./assets/odometer.js"></script>
+  <script src="./assets/highcharts.js"></script>
+  <script src="./assets/scripts/main.js"></script>
+</body>
+
+</html>

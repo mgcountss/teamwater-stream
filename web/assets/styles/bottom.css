@@ -1,0 +1,408 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: #e2e8f0;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    background: #0f172a;
+}
+
+/* Enhanced animated background */
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background:
+        radial-gradient(circle at 20% 80%, rgba(59, 130, 246, 0.08) 0%, transparent 60%),
+        radial-gradient(circle at 80% 20%, rgba(16, 185, 129, 0.06) 0%, transparent 60%),
+        radial-gradient(circle at 40% 40%, rgba(139, 92, 246, 0.05) 0%, transparent 60%),
+        radial-gradient(circle at 90% 90%, rgba(239, 68, 68, 0.04) 0%, transparent 50%);
+    z-index: 0;
+    animation: backgroundShift 20s ease-in-out infinite;
+}
+
+@keyframes backgroundShift {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.8;
+    }
+}
+
+/* Enhanced bottom section styling */
+.bottom-section {
+    position: relative;
+    z-index: 10;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    margin-left: 10px;
+    margin-right: 10px;
+    gap: 10px;
+}
+
+/* YouTube Creator Stats - Enhanced */
+.creator-stats-bar {
+    background: rgba(15, 23, 42, 0.95);
+    padding: 5px 5px;
+    border-top: 1px solid rgba(239, 68, 68, 0.15);
+    border-bottom: 1px solid rgba(74, 85, 104, 0.2);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+
+.creator-stats-content {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.top-creators {
+    display: grid;
+    gap: 20px;
+    align-items: center;
+    grid-template-columns: repeat(5, 1fr);
+    width: 68vw;
+}
+
+.creator-image {
+    height: 3.8vw;
+    width: 3.8vw;
+    margin-top: -0.25vw;
+    padding: 7px;
+    border-radius: 50%;
+}
+
+.creator-item {
+    text-align: left;
+    padding: 5px 5px;
+    background: rgba(239, 68, 68, 0.08);
+    border-radius: 16px;
+    border: 1px solid rgba(239, 68, 68, 0.15);
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    height: 4vw;
+}
+
+.creator-name {
+    font-size: 1.25rem;
+    color: #fca5a5;
+    font-weight: 700;
+    margin-bottom: 6px;
+    margin-left: 0px;
+}
+
+.creator-subs {
+    font-size: 1.35rem;
+    font-weight: 800;
+    color: #f1f5f9;
+    margin-top: -5px;
+}
+
+.bottom-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 30px 25px;
+    background: rgba(15, 23, 42, 0.95);
+    margin-top: 0px;
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+
+.odometer {
+    color: #FFF;
+    font-weight: 700;
+}
+
+/* Styles for New Videos Section */
+.new-videos-section {
+    background: rgba(15, 23, 42, 0.95);
+    border-radius: 15px;
+    border: 1px solid rgba(74, 85, 104, 0.2);
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin-top: 0px;
+    width: 310px;
+    padding-bottom: 5px;
+    padding-top: 10px;
+}
+
+.section-title {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #60a5fa;
+    margin-bottom: 15px;
+    text-align: center;
+    background: linear-gradient(135deg, #60a5fa, #a78bfa);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 1px 2px rgba(96, 165, 250, 0.2));
+}
+
+.new-video-list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.new-video-item {
+    display: flex;
+    align-items: center;
+    background: rgba(30, 41, 59, 0.6);
+    border-radius: 10px;
+    padding: 10px;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(74, 85, 104, 0.15);
+    padding-bottom: 3px;
+}
+
+.new-video-item:hover {
+    background: rgba(30, 41, 59, 0.8);
+    transform: translateX(5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.video-thumbnail {
+    width: 70px;
+    height: 45px;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-right: 5px;
+    border: 1px solid rgba(59, 130, 246, 0.2);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    margin-top: -8px;
+}
+
+.video-details {
+    flex-grow: 1;
+}
+
+.video-item-title {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #f1f5f9;
+    line-height: 1.3;
+    margin-bottom: 3px;
+    margin-top: -10px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-clamp: 2;
+    max-height: 40px;
+}
+
+.video-item-channel {
+    font-size: 0.8rem;
+    color: #94a3b8;
+    max-height: 20px;
+}
+
+.mt {
+    margin-top: 10px;
+}
+
+.mt2 {
+    margin-top: 10px;
+    height: 145px;
+}
+
+.first {
+    width: 65vw;
+}
+
+/* Communities Donation Leaderboard Styles */
+.donation-leaderboard {
+    background: rgba(15, 23, 42, 0.95);
+    border-radius: 15px;
+    border: 1px solid rgba(74, 85, 104, 0.2);
+    padding: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+    height: 145px;
+    overflow: hidden;
+}
+
+.donation-title {
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: #34d399;
+    margin-bottom: 12px;
+    text-align: center;
+    background: linear-gradient(135deg, #34d399, #10b981);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 1px 2px rgba(52, 211, 153, 0.2));
+}
+
+.donation-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    height: calc(100% - 40px);
+}
+
+.donation-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(30, 41, 59, 0.6);
+    border-radius: 8px;
+    padding: 8px 10px;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(74, 85, 104, 0.15);
+    min-height: 35px;
+}
+
+.donation-item:hover {
+    background: rgba(30, 41, 59, 0.8);
+    transform: translateY(-1px);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.donation-name {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #f1f5f9;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 15vw;
+    margin-left: 10px;
+    margin-top: 9px;
+}
+
+.donation-thumbnail {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.donation-amount {
+    font-size: 0.9rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, #34d399, #10b981);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.donation-rank {
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    background: linear-gradient(135deg, #fbbf24, #f59e0b);
+    color: #000;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.7rem;
+    font-weight: 800;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.donation-item:nth-child(1) .donation-rank {
+    background: linear-gradient(135deg, #fbbf24, #f59e0b);
+}
+
+.donation-item:nth-child(2) .donation-rank {
+    background: linear-gradient(135deg, #e5e7eb, #9ca3af);
+}
+
+.donation-item:nth-child(3) .donation-rank {
+    background: linear-gradient(135deg, #f97316, #ea580c);
+}
+
+.donation-item:nth-child(n+4) .donation-rank {
+    background: linear-gradient(135deg, #6b7280, #4b5563);
+}
+
+.donation-item {
+    position: relative;
+}
+
+/* Special styling for top donors */
+.donation-item:nth-child(1) {
+    border: 1px solid rgba(251, 191, 36, 0.3);
+    background: rgba(251, 191, 36, 0.05);
+}
+
+.donation-item:nth-child(2) {
+    border: 1px solid rgba(156, 163, 175, 0.3);
+    background: rgba(156, 163, 175, 0.05);
+}
+
+.donation-item:nth-child(3) {
+    border: 1px solid rgba(249, 115, 22, 0.3);
+    background: rgba(249, 115, 22, 0.05);
+}
+
+/* Scrollbar styling for donation grid */
+.donation-grid::-webkit-scrollbar {
+    width: 4px;
+}
+
+.donation-grid::-webkit-scrollbar-track {
+    background: rgba(30, 41, 59, 0.3);
+    border-radius: 2px;
+}
+
+.donation-grid::-webkit-scrollbar-thumb {
+    background: rgba(52, 211, 153, 0.5);
+    border-radius: 2px;
+}
+
+.donation-grid::-webkit-scrollbar-thumb:hover {
+    background: rgba(52, 211, 153, 0.7);
+}
+
+/* Additional leaderboard section */
+.weekly-leaderboard {
+    background: rgba(15, 23, 42, 0.95);
+    border-radius: 15px;
+    border: 1px solid rgba(74, 85, 104, 0.2);
+    padding: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+    height: 145px;
+    overflow: hidden;
+}
+
+.weekly-title {
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: #a78bfa;
+    margin-bottom: 12px;
+    text-align: center;
+    background: linear-gradient(135deg, #a78bfa, #8b5cf6);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 1px 2px rgba(167, 139, 250, 0.2));
+}
